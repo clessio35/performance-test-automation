@@ -1,0 +1,40 @@
+Informação,Valor
+Usuarios,50
+Repeticoes por usuario,10
+Ramp-up segundos,5
+Duracao segundos,30
+Tempo medio maximo esperado (ms),500
+P95 maximo (ms),800
+Erro maximo (%),1
+Throughput minimo req/s,20
+
+URL,Repeticao,Tempo_ms,Status_Code
+https://jsonplaceholder.typicode.com/posts,1,468,200
+https://jsonplaceholder.typicode.com/posts,2,719,200
+https://jsonplaceholder.typicode.com/posts,3,217,200
+https://jsonplaceholder.typicode.com/posts,4,32,200
+https://jsonplaceholder.typicode.com/posts,5,18,200
+https://jsonplaceholder.typicode.com/posts,6,22,200
+https://jsonplaceholder.typicode.com/posts,7,32,200
+https://jsonplaceholder.typicode.com/posts,8,47,200
+https://jsonplaceholder.typicode.com/posts,9,17,200
+https://jsonplaceholder.typicode.com/posts,10,20,200
+https://jsonplaceholder.typicode.com/comments,1,25,200
+https://jsonplaceholder.typicode.com/comments,2,22,200
+https://jsonplaceholder.typicode.com/comments,3,45,200
+https://jsonplaceholder.typicode.com/comments,4,18,200
+https://jsonplaceholder.typicode.com/comments,5,27,200
+https://jsonplaceholder.typicode.com/comments,6,21,200
+https://jsonplaceholder.typicode.com/comments,7,27,200
+https://jsonplaceholder.typicode.com/comments,8,26,200
+https://jsonplaceholder.typicode.com/comments,9,33,200
+https://jsonplaceholder.typicode.com/comments,10,24,200
+
+Resumo por URL
+URL,Tempo_medio_ms,P95_ms,P99_ms,Taxa_Erro_percent,Throughput_req_por_segundo
+https://jsonplaceholder.typicode.com/posts,159.2,719,719,0.0,6.281407035175879
+https://jsonplaceholder.typicode.com/comments,26.8,45,45,0.0,37.31343283582089
+
+Resumo geral do teste
+Tempo_medio_ms,P95_ms,P99_ms,Taxa_Erro_percent,Throughput_req_por_segundo,Resultado_SLA
+93.0,468,719,0.0,21.797419935498386,TESTE PASSOU
